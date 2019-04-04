@@ -6,7 +6,7 @@ var serve = require('koa-static');
 var route = require('koa-route');
 var koa = require('koa');
 var path = require('path');
-var app = module.exports = koa();
+var app = module.exports = new koa();
 
 // Logger
 app.use(logger());
